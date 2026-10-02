@@ -60,9 +60,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Welcome, young traveler. My name is Wings. Notice the exclamation point above my head? That means I have an adventure for you. To learn more about the adventure, click on me and select the &lt;b&gt;&lt;i&gt;Talk&lt;/i&gt;&lt;/b&gt; bubble. Try it now by clicking  &lt;b&gt;&lt;i&gt;Continue&lt;/i&gt;&lt;/b&gt; to close this window. &lt;font size='12' color='grey'&gt;The exclamation mark indicates that someone needs your help. &lt;/font&gt;
- &lt;font size='12' color='grey'&gt; The Talk bubble lets you talk to a friend you've clicked on.&lt;/font&gt;
-</text>
+            <text>Welcome, young traveler. My name is Wings. Notice the exclamation point above my head? That means I have an adventure for you. To learn more about the adventure, click on me and select the &lt;b&gt;&lt;i&gt;Talk&lt;/i&gt;&lt;/b&gt; bubble. Try it now by clicking  &lt;b&gt;&lt;i&gt;Continue&lt;/i&gt;&lt;/b&gt; to close this window. &lt;font size='12' color='grey'&gt;The exclamation mark indicates that someone needs your help. &lt;/font&gt;&lt;font size='12' color='grey'&gt; The Talk bubble lets you talk to a friend you've clicked on.&lt;/font&gt;</text>
             <identifier>H047</identifier>
           </object>
           <object type="questData.DialogueImageAction">
@@ -1136,7 +1134,7 @@
     </quest>
   </adventure>
   <adventure id="ADV-0000000905">
-    <description>Trouve les Overgaard Skylands</description>
+    <description>Find the Overgaard Skylands</description>
     <quest id="QUE-0000002148">
       <description>Talk to Deru</description>
       <line description="Complete">
@@ -1914,7 +1912,7 @@
     </quest>
   </adventure>
   <adventure id="ADV-0000000907">
-    <description>Messages de Bella</description>
+    <description>Bella's Letters</description>
     <quest id="QUE-0000002152">
       <description>Parle à Bella</description>
       <line description="Complete">
@@ -1967,7 +1965,7 @@
       </line>
     </quest>
     <quest id="QUE-0000002673">
-      <description>Apporte la lettre à Shine</description>
+      <description>Bring the letter to Shine</description>
       <line description="Complete - Shine">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -1989,7 +1987,7 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Une lettre de Bella pour moi ? Vite, vite, je veux savoir ce qu'elle a écrit ! Merci beaucoup.</text>
+            <text>A letter from Bella for me? Quick, quick, I want to know what she wrote! Thank you so much.
             <identifier>C011</identifier>
           </object>
           <object type="questData.ShowAdventureCompleteAction" />
@@ -2019,7 +2017,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Une lettre de Bella pour moi ? Vite, vite, je veux savoir ce qu'elle a écrit ! Merci beaucoup.</text>
+            <text>A letter from Bella for me? Quick, quick, I want to know what she wrote! Thank you so much.</text>
           </object>
           <object type="questData.AddTokenItemAction">
             <key>QUE-0000002674</key>
@@ -2042,13 +2040,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>S'il te plaît, remets les lettres que je t'ai données à Shine et Hannah.</text>
+            <text>Please give the letters I gave you to Shine and Hannah.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002674">
-      <description>Apporte la lettre à Hannah</description>
+      <description>Bring the letter to Hannah</description>
       <line description="Complete - Hannah">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2070,7 +2068,7 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Merveilleux. J'attendais cette lettre avec impatience. Merci beaucoup.</text>
+            <text>Wonderful. I was expecting this letter impatiently. Thank you so much.</text>
             <identifier>C018</identifier>
           </object>
           <object type="questData.ShowAdventureCompleteAction" />
@@ -2100,7 +2098,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Merveilleux. J'attendais cette lettre avec impatience. Merci beaucoup.</text>
+            <text>Wonderful. I was expecting this letter impatiently. Thank you so much.</text>
           </object>
           <object type="questData.AddTokenItemAction">
             <key>QUE-0000002673</key>
@@ -2123,16 +2121,16 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>S'il te plaît, remets les lettres que je t'ai données à Shine et Hannah.</text>
+            <text>Please give the letters I gave you to Shine and Hannah.</text>
           </object>
         </actions>
       </line>
     </quest>
   </adventure>
   <adventure id="ADV-0000000908">
-    <description>Présentations</description>
+    <description>Introductions</description>
     <quest id="QUE-0000002154">
-      <description>Parle à Penny </description>
+      <description>Talk to Penny </description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2145,7 +2143,7 @@
           <object type="questData.LogAdventureBeginAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Me rendrais-tu un service ? J’ai un scoop : je vais interviewer Mother Comfort, mais j’ai promis à mon père que je livrerais le journal d’aujourd’hui. Je n’ai pas eu le temps de livrer celui de M. Bartholomew. Pourrais-tu le lui apporter pour moi ? Merci beaucoup.</text>
+            <text>Would you give me a hand? I have a scoop: I will interview Mother Comfort, but I promised to my dad that I will deliver the newspaper today. I didn't have time to deliver Mr Bartholomew's one yet. Could you bring it to him for me? Thank you.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I070Template</itemId>
@@ -2159,7 +2157,7 @@
       </line>
     </quest>
     <quest id="QUE-0000002175" targetTemplate="C014Template">
-      <description>Apporte la gazette de Canter Hollow à Mr. Bartholomew</description>
+      <description>Bring the Canter Hollow's newspaper to Mr. Bartholomew</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2176,10 +2174,10 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Le journal d’aujourd’hui, excellent. Merci. Les forgerons n’ont pas beaucoup de temps pour écouter les potins. C’est en lisant que nous savons ce qui se passe à Canter Hollow.</text>
+            <text>Today's newspaper, amazing. Thanks. Blacksmiths don't have a lot of time to listen to gossip. It's by reading that we know what's happening in Canter Hollow.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Ah, j’allais oublier. Mother Comfort a besoin de pommes pour préparer une surprise. Prends ces graines et fais pousser un pommier. Quand tu obtiendras une pomme rouge, cueille-la et apporte-la à Mother Comfort.</text>
+            <text>Ah, I almost forgot. Mother Comfort needs apples to prepare a surprise. Take those seeds and grow an apple tree. When you have a red apple, harvest it and bring it to Mother Comfort.</text>
           </object>
           <object type="questData.AddHorseshoesAction">
             <count>5</count>
@@ -2208,13 +2206,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Apporte ce journal à Mr. Bartholomew.</text>
+            <text>Bring this newspaper to Mr. Bartholomew.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002176" targetTemplate="DirtTemplate" targetZone="Z010">
-      <description>Fais pousser une pomme et apporte-la à Mother Comfort</description>
+      <description>Grow an apple and bring it to Mother Comfort</description>
       <line description="Complete">
         <trigger>
           <object type="questData.ActionTrigger">
@@ -2229,7 +2227,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>Je devrais apporter cette pomme à Mother Comfort.</text>
+            <text>I should bring this apple to Mother Comfort.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002177</questId>
@@ -2247,13 +2245,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>S’il te plait, fais pousser un pommier.</text>
+            <text>Please, grow an apple tree.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002177">
-      <description>Apporte la pomme à Mother Comfort</description>
+      <description>Bring the apple to Mother Comfort</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2270,10 +2268,10 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Douces étoiles, regardez-moi ces pommes, elles sont épanouies comme un jour d’été. Maintenant, je vais te dire un secret. La surprise que je prépare, c’est une tarte aux pommes pour Penny Inkwell. </text>
+            <text>Good heavens, just look at those apples, they’re as radiant as a summer day. Now, I’ll let you in on a secret. The surprise I’m preparing is an apple pie for Penny Inkwell.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Mais elle est si modeste qu’elle n’accepterait jamais un cadeau. Peut-être que tu peux la convaincre d'en faire un article pour le journal ?</text>
+            <text>But she is so modest that she would never accept a gift. Perhaps you could convince her to write an article about it for the newspaper?</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I013aTemplate</itemId>
@@ -2302,13 +2300,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Apporte la pomme à Mother Comfort</text>
+            <text>Bring the apple to Mother Comfort</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002178">
-      <description>Apporte la tarte aux pommes à Penny Inkwell</description>
+      <description>Bring the apple pie to Penny Inkwell</description>
       <line description="Dialog1">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2319,9 +2317,9 @@
         <conditions />
         <actions>
           <object type="questData.DialogueChoiceAction">
-            <text>Bonjour, as-tu entendu de bonnes histoires sur lesquelles je pourrais enquêter pour la Gazette de Canter Hollow ?</text>
-            <choice id="line1">Non, désolée, je n’ai rien entendu de tel.</choice>
-            <choice id="line2">J’ai une histoire qui parle d’une tarte aux pommes très spéciale</choice>
+            <text>Hello, have you heard any good stories I could investigate for the Canter Hollow Gazette?</text>
+            <choice id="line1">No, sorry, I haven’t heard anything of the sort.</choice>
+            <choice id="line2">I have a story about a very special apple pie.</choice>
           </object>
         </actions>
       </line>
@@ -2334,7 +2332,7 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Dommage. Garde les yeux bien ouverts, il se passe toujours des tas de choses au Nord du Septentrion. </text>
+            <text>Too bad. Keep your eyes wide open; there’s always a lot going on in the North of North.</text>
           </object>
         </actions>
       </line>
@@ -2347,8 +2345,8 @@
         <conditions />
         <actions>
           <object type="questData.DialogueChoiceAction">
-            <text>Merveilleux ! Qui n’aime pas les tartes aux pommes, surtout quand elles sont spéciales ? Il faut que tu me racontes ça.</text>
-            <choice id="line3">C’est Mother Comfort qui a fait cette tarte. Elle voulait que ce soit une surprise.</choice>
+            <text>Wonderful! Who doesn’t love apple tarts, especially when they’re special? You have to tell me all about it.</text>
+            <choice id="line3">Mother Comfort made this pie. She wanted it to be a surprise.</choice>
           </object>
         </actions>
       </line>
@@ -2361,8 +2359,8 @@
         <conditions />
         <actions>
           <object type="questData.DialogueChoiceAction">
-            <text>Mother Comfort a cuisiné une tarte-surprise ? Voilà qui est intéressant. Et à qui est-elle destinée ? Cette personne doit être très spéciale pour mériter une tarte aux pommes de Mother Comfort.</text>
-            <choice id="line4">La surprise est destinée à une jeune fille exceptionnelle, qui a beaucoup fait pour Canter Hollow, mais qui est très modeste.</choice>
+            <text>Mother Comfort has baked a surprise pie? That’s interesting. And who is it for? That person must be very special to deserve an apple pie from Mother Comfort.</text>
+            <choice id="line4">The surprise is intended for an exceptional young woman who has done a great deal for Canter Hollow but is very modest.</choice>
           </object>
         </actions>
       </line>
@@ -2375,8 +2373,8 @@
         <conditions />
         <actions>
           <object type="questData.DialogueChoiceAction">
-            <text>Oh, une sorte d’héroïne locale. C’est le genre d’histoire qui serait une inspiration pour tout le monde. Mais de qui s’agit-il ? J’adorerais l’interviewer.</text>
-            <choice id="line5">Ivenna, la maîtresse des loups !</choice>
+            <text>Oh, a sort of local heroine. That’s the kind of story that would inspire everyone. But who is it? I’d love to interview her.</text>
+            <choice id="line5">Ivenna, Mistress of the Wolves!</choice>
           </object>
         </actions>
       </line>
@@ -2389,8 +2387,8 @@
         <conditions />
         <actions>
           <object type="questData.DialogueChoiceAction">
-            <text>Quoi ? Ha ha. La bonne blague. Tu m’as bien eue. Reviens quand tu auras une vraie histoire. </text>
-            <choice id="line6">Penny Inkwell !</choice>
+            <text>What? Ha ha. Good one. You really got me. Come back when you have a real story. </text>
+            <choice id="line6">Penny Inkwell!</choice>
           </object>
         </actions>
       </line>
@@ -2405,10 +2403,10 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Penny Inkwell. Hum. Ce nom me dit quelque chose. Attends, mais c’est moi ! Mother Comfort m’a préparé une tarte aux pommes ? Quelle délicate attention ! Je ne sais pas pourquoi elle pense que j’ai fait quoi que ce soit pour Canter Hollow. Je la remercierai la prochaine fois que je la verrai.</text>
+            <text>Penny Inkwell. Hmm. That name rings a bell. Wait—that’s me! Mother Comfort baked me an apple pie? How thoughtful! I don’t know why she thinks I did anything for Canter Hollow. I’ll thank her the next time I see her.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Leoni l'apothicaire a besoin de ton aide. Un apothicaire est un expert en herbes. Il les utilise pour confectionner des remèdes, mais il a besoin de toi. Va le trouver et vois si tu peux l'aider.</text>
+            <text>Leoni the apothecary needs your help. An apothecary is an expert in herbs. He uses them to prepare remedies, but he needs you. Go find him and see if you can help.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002621</questId>
@@ -2438,14 +2436,14 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>S’il te plait, va convaincre Penny d’accepter cette tarte que j’ai faite pour elle. Souviens-toi qu’elle ferait n’importe quoi pour une bonne histoire.</text>
+            <text>Please, go convince Penny to accept this pie I made for her. Remember, she’d do anything for a good story.</text>
           </object>
         </actions>
       </line>
     </quest>
   </adventure>
   <adventure id="ADV-0000000909">
-    <description>Cours de cuisine avec Mother Comfort</description>
+    <description>Cooking classes with Mother Comfort</description>
     <quest id="QUE-0000002158" visible="False">
       <description unusedLocId="LOC-0000004201">Talk to Mother Comfort</description>
       <line description="Complete">
@@ -2460,7 +2458,7 @@
           <object type="questData.LogAdventureBeginAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Bonjour ma chérie ! T’intéresses-tu à la cuisine ? Je peux t’apprendre tout ce que je sais. Pour commencer, il me faut du lait. Peut-être que tu peux demande à Colm s'il en a à te donner.  </text>
+            <text>Hello, my dear! Are you interested in cooking? I can teach you everything I know. To start, I need some milk. Perhaps you could ask Colm if he has any to give you.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002221</questId>
@@ -2470,7 +2468,7 @@
       </line>
     </quest>
     <quest id="QUE-0000002221">
-      <description>Parle à Colm</description>
+      <description>Talk to Colm</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2482,7 +2480,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Tu veux du lait ? Bien sûr, pourquoi pas. De toutes façons, je n'aime pas trop ça. Tiens, en voici un carton.</text>
+            <text>Do you want some milk? Sure, why not. I don't really like it anyway. Here, have a carton.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I001aTemplate</itemId>
@@ -2504,13 +2502,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>S'il te plaît, va demander du lait à Colm.</text>
+            <text>Please go ask Colm for some milk.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002222">
-      <description>Apporte le lait à Mother Comfort</description>
+      <description>Bring the milk to Mother Comfort</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2527,10 +2525,10 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>On dirait que tu as du lait ! Tu te débrouilles bien !  Voici quelques fers à cheval.</text>
+            <text>It looks like you've got some milk! You're doing a great job! Here are some horseshoes.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Maintenant, il nous faut du beurre pour notre recette. Cade Traveler a une baratte dans sa grange. Va lui demander s’il veut bien te la prêter, et ramène-la-moi.</text>
+            <text>Now, we need butter for our recipe. Cade Traveler has a churn in his barn. Go ask him if he’ll lend it to you, and bring it back to me.</text>
           </object>
           <object type="questData.AddHorseshoesAction">
             <count>5</count>
@@ -2551,13 +2549,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>N'étais-tu pas sur le point d'apporter un carton de lait à Mother Comfort ? C'est une très gentille dame, alors fais ce qu'elle te demande.</text>
+            <text>Weren't you about to take a carton of milk to Mother Comfort? She is a very kind lady, so do what she asks of you.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002225">
-      <description>Parle à Cade</description>
+      <description>Talk to Cade</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2569,7 +2567,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Mais bien sûr que tu peux emprunter ma baratte. Nous sommes amis, après tout, et les amis doivent s’entraider.</text>
+            <text>Of course you can borrow my churn. We are friends, after all, and friends should help each other.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I043Template</itemId>
@@ -2591,13 +2589,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Cade Traveler a une baratte dans sa grange. Va lui demander si tu peux la lui emprunter.</text>
+            <text>Cade Traveler has a churn in his barn. Go ask him if you can borrow it.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002223">
-      <description>Apporte la baratte à Mother Comfort</description>
+      <description>Bring the churn to Mother Comfort.</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2614,7 +2612,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Tu as la baratte de Cade, c’est parfait. Maintenant, nous pouvons faire du beurre. Tu es prête ? Verse le lait dans la baratte.</text>
+            <text>You have Cade’s churn—that’s perfect. Now we can make butter. Are you ready? Pour the milk into the churn.</text>
           </object>
           <object type="questData.RemoveMultipleInventoryAction">
             <template>I043Template</template>
@@ -2642,13 +2640,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Je pense que Mother Comfort attend que tu lui rapportes la baratte à beurre.</text>
+            <text>I think Mother Comfort is waiting for you to bring her the butter churn.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002224" targetTemplate="M025Template" targetZone="Z008">
-      <description>Mets du lait dans la baratte à beurre</description>
+      <description>Put milk into the butter churn.</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TradeTrigger">
@@ -2660,7 +2658,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>Je devrais apporter ce beurre à Mother Comfort.</text>
+            <text>I should take this butter to Mother Comfort.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002227</questId>
@@ -2678,13 +2676,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Pour faire du beurre, mets simplement du lait dans la baratte à beurre.</text>
+            <text>To make butter, simply put milk into the butter churn.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002227">
-      <description>Apporte du beurre à Mother Comfort</description>
+      <description>Bring some butter to Mother Comfort</description>
       <line description="Complete - with sugarcane">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2706,10 +2704,10 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Maintenant, faisons des tartes aux pommes. Je vois que tu as déjà de la canne à sucre. Je vais l'utiliser pour faire du sucre. &lt;br/&gt;&lt;br/&gt; Oh, juste ciel ! Si je n'avais pas ma liste, j'oublierais ce que je suis en train de faire ! Voyons un peu cette liste.</text>
+            <text>Now, let's make some apple pies. I see you already have some sugarcane. I'll use it to make sugar. &lt;br/&gt;&lt;br/&gt; Goodness me! If I didn't have my list, I'd forget what I was doing! Let's take a look at that list.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Ah-ha ! Maintenant, il me faut des moules à tarte, et il m'en faut beaucoup. &lt;br/&gt;&lt;br/&gt;Peux-tu courir à la boutique de Mr. Smithin et me rapporter 5 moules à tarte ?</text>
+            <text>Aha! Now I need pie pans, and I need a lot of them. &lt;br/&gt;&lt;br/&gt;Can you run over to Mr. Smithin's shop and bring me back 5 pie pans?</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002233</questId>
@@ -2746,7 +2744,7 @@
             <count>5</count>
           </object>
           <object type="questData.DialogueAction">
-            <text>Tu as attrapé le coup de main pour faire le beurre. Et il est délicieux ! Je te donnerai de fers à cheval en échange de ton beurre.</text>
+            <text>You’ve got the hang of making butter. And it’s delicious! I’ll give you some horseshoes in exchange for your butter.</text>
           </object>
           <object type="questData.ShowAdventureCompleteAction" />
           <object type="questData.AddMultipleInventoryAction">
@@ -2754,10 +2752,10 @@
             <count>1</count>
           </object>
           <object type="questData.DialogueAction">
-            <text>On vient de me commander beaucoup de tartes, mais mon garde-manger est presque vide. Voudrais-tu m'aider à rassembler tous les ingrédients ?</text>
+            <text>I've just received a large order for pies, but my pantry is almost empty. Would you like to help me gather all the ingredients?</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Merveilleux ! En premier lieu, il me faut du sucre ! Tu peux faire pousser la canne à sucre toi-même et m’en rapporter ensuite. Voici une graine de canne à sucre.</text>
+            <text>Wonderful! First of all, I need some sugar! You can grow the sugarcane yourself and then bring it back to me. Here is a sugarcane seed.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002228</questId>
@@ -2772,9 +2770,9 @@
     </quest>
   </adventure>
   <adventure id="ADV-0000000910">
-    <description>La main verte</description>
+    <description>A green thumb</description>
     <quest id="QUE-0000002157">
-      <description>Parle à Mr. Bartholomew</description>
+      <description>Talk to Mr. Bartholomew</description>
       <line description="Complete - Already done">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -2801,7 +2799,7 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Waou, j'étais sur le point de te demander de me faire pousser une carotte, une tomate et une citrouille, mais on dirait que tu as déjà tout ça. Cela ne t'ennuie pas si je m'en sers ? Je te donnerai des fers à cheval en échange.</text>
+            <text>Wow, I was about to ask you to grow a carrot, a tomato, and a pumpkin for me, but it looks like you already have all that. You don't mind if I use them? I'll give you some horseshoes in exchange.</text>
           </object>
           <object type="questData.AddHorseshoesAction">
             <count>10</count>
@@ -2837,10 +2835,10 @@
           <object type="questData.LogAdventureBeginAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Bonjour. Quelle belle journée pour faire du jardinage, n’est-ce pas ? Mais j’ai mal au dos à force d’avoir soulevé d’énormes citrouilles hier. Me rendrais-tu un service ? </text>
+            <text>Hello. What a beautiful day for gardening, isn't it? But my back hurts from lifting huge pumpkins yesterday. Could you do me a favor?</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>J'aimerais que tu me fasses pousser une carotte, une tomate et une citrouille. Voici des graines. Quand les légumes auront poussé, apporte-les-moi et je t'en donnerai un bon prix.</text>
+            <text>I'd like you to grow a carrot, a tomato, and a pumpkin for me. Here are some seeds. When the vegetables have grown, bring them to me, and I'll give you a good price for them.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>P008SeedTemplate</itemId>
@@ -2871,7 +2869,7 @@
       </line>
     </quest>
     <quest id="QUE-0000002239" targetTemplate="DirtTemplate" targetZone="Z010">
-      <description>Fais pousser une carotte, une tomate et une citrouille</description>
+      <description>Grow a carrot, a tomato, and a pumpkin.</description>
       <line description="Complete - Carrot">
         <trigger>
           <object type="questData.ContextItemTrigger">
@@ -2892,7 +2890,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>J'ai tous les légumes que voulait Mr. Bartholomew. Je devrais les lui apporter.</text>
+            <text>I have all the vegetables Mr. Bartholomew wanted. I should take them to him.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002243</questId>
@@ -2922,7 +2920,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>J'ai tous les légumes que voulait Mr. Bartholomew. Je devrais les lui apporter.</text>
+            <text>I have all the vegetables Mr. Bartholomew wanted. I should take them to him.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002243</questId>
@@ -2950,7 +2948,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>J'ai tous les légumes que voulait Mr. Bartholomew. Je devrais les lui apporter.</text>
+            <text>I have all the vegetables Mr. Bartholomew wanted. I should take them to him.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002243</questId>
@@ -2968,7 +2966,7 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>OOh, mon pauvre dos ! Je t’en prie, va planter mes légumes et rapporte-les-moi une fois qu’ils auront poussé. Souviens-toi qu'il me faut une carotte, une tomate et une citrouille.</text>
+            <text>Oh, my poor back! Please, go plant my vegetables and bring them back to me once they’ve grown. Remember, I need a carrot, a tomato, and a pumpkin.</text>
           </object>
         </actions>
       </line>
@@ -3037,7 +3035,7 @@
       </line>
     </quest>
     <quest id="QUE-0000002243">
-      <description>Apporte la carotte, la tomate et la citrouille à Mr. Bartholomew</description>
+      <description>Bring the carrot, the tomato, and the pumpkin to Mr. Bartholomew.</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -3063,7 +3061,7 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Ces légumes sont splendides. Je ne pense pas que j’aurais fait mieux moi-même. Merci. Voici quelques fers à cheval pour ta peine. Reviens si tu veux en gagner plus. </text>
+            <text>These vegetables are splendid. I don’t think I could have done better myself. Thank you. Here are a few horseshoes for your trouble. Come back if you want to earn more.</text>
           </object>
           <object type="questData.AddHorseshoesAction">
             <count>10</count>
@@ -3104,16 +3102,16 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Oh mon pauvre dos ! S'il te plaît, plante mes légumes pour moi et rapporte-les-moi quand ils auront poussé. souviens toi que j'ai besoin d'une carotte, d'une tomate et d'une citrouille.</text>
+            <text>Oh, my poor back! Please, go plant my vegetables and bring them back to me once they’ve grown. Remember, I need a carrot, a tomato, and a pumpkin.</text>
           </object>
         </actions>
       </line>
     </quest>
   </adventure>
   <adventure id="ADV-0000000913">
-    <description>Tartes aux pommes</description>
+    <description>Apple pies</description>
     <quest id="QUE-0000002228" targetTemplate="DirtTemplate" targetZone="Z010">
-      <description>Fais pousser de la canne à sucre et apporte-la à Mother Comfort</description>
+      <description>Grow sugarcane and bring it to Mother Comfort.</description>
       <line description="Complete">
         <trigger>
           <object type="questData.ContextItemTrigger">
@@ -3126,7 +3124,7 @@
           <object type="questData.LogAdventureBeginAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>Je devrais rapporter ça à Mother Comfort.</text>
+            <text>I should bring this to Mother Comfort.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002229</questId>
@@ -3144,13 +3142,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Il me faut du sucre pour mes tartes. As-tu fait pousser la canne à sucre ?</text>
+            <text>I need sugar for my pies. Did you grow the sugarcane?</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002229">
-      <description>Apporte de la canne à sucre à Mother Comfort</description>
+      <description>Bring sugar cane to Mother Comfort</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -3167,10 +3165,10 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Fantastique ! Il y a là juste assez de sucre pour nos tartes.</text>
+            <text>Fantastic! There's just enough sugar there for our tarts.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Pauvre de moi ! Si je n’avais pas cette liste, j’oublierais ce que je suis en train de faire ! Laisse-moi regarder ma liste. Ah-ha. Maintenant, il me faut des moules à tarte. Beaucoup de moules à tarte bien ronds. &lt;br/&gt;&lt;br/&gt;Pourrais-tu courir à la boutique de Mr. Smithin pour me rapporter 5 moules à tarte ? Ils ne sont pas très lourds.</text>
+            <text>Oh dear! If I didn't have this list, I'd forget what I was doing! Let me check my list. Aha. Now I need pie pans. Lots of nice, round pie pans. &lt;br/&gt;&lt;br/&gt;Could you run over to Mr. Smithin's shop and bring me back 5 pie pans? They aren't very heavy.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002233</questId>
@@ -3192,13 +3190,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>J'ai besoin de sucre pour mes tartes. As-tu fait pousser la canne à sucre.</text>
+            <text>I need sugar for my pies. Did you grow the sugar cane?</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002233">
-      <description>Parle à Ray Smithin</description>
+      <description>Talk to Ray Smithin</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -3210,7 +3208,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Tu veux des moules à tarte pour Mother Comfort ? Laisse-moi regarder… Où ai-je mis ces moules, déjà ? Ah, les voilà. Passe le bonjour à Mother Comfort.</text>
+            <text>Do you want some pie pans for Mother Comfort? Let me see... Where did I put those pans, anyway? Ah, here they are. Say hello to Mother Comfort for me.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I044Template</itemId>
@@ -3232,13 +3230,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>S'il te plaît, va parler à Mr. Smithin.</text>
+            <text>Please, go talk to Mr. Smithin.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002230">
-      <description>Apporte les moules à tarte à Mother Comfort</description>
+      <description>Bring the pie pans to Mother Comfort.</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -3255,10 +3253,10 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Les moules à tartes, c'est tellement amusant. Maintenant, j'en ai assez pour confectionner toutes les délicieuses tartes.</text>
+            <text>Pie pans are so much fun. Now I have enough of them to make all kinds of delicious tarts.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Je viens de vérifier à nouveau ma liste et il me faut du beurre. S'il te plaît, fais-moi un peu de beurre. Tu te souviens comment on fait ? Trais un bovo, place le lait dans la baratte de Cade, et secoue la batte de haut en bas.</text>
+            <text>I just checked my list again, and I need some butter. Please make me some butter. Do you remember how? Milk a bovo, put the milk in Cade's churn, and shake the dasher up and down.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002231</questId>
@@ -3280,13 +3278,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>S'il te plaît, apporte ces 5 moules à tarte à Mother Comfort</text>
+            <text>Please, bring those 5 pie pans to Mother Comfort.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002231" targetTemplate="M025Template" targetZone="Z008">
-      <description>Ajoute le lait dans la baratte à beurre</description>
+      <description>Add the milk to the butter churn.</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TradeTrigger">
@@ -3298,7 +3296,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>Je devrais apporter ce beurre à Mother Comfort.</text>
+            <text>I should take this butter to Mother Comfort.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002232</questId>
@@ -3316,13 +3314,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>As-tu fait du beurre ? Il m’en faut pour ma pâte à tarte.</text>
+            <text>Did you make any butter? I need some for my pie crust.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002232">
-      <description>Apporte du beurre à Mother Comfort</description>
+      <description>Bring butter to Mother Comfort.</description>
       <line description="Complete - 3 apples">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -3344,7 +3342,7 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Merci pour ce beurre bien crémeux. Oh, et on dirait que tu as déjà les 3 pommes qu'il me faut pour terminer mes pommes. Merci de m'avoir aidée. Voici quelques fers à cheval pour ta peine.</text>
+            <text>Thanks for this lovely creamy butter. Oh, and it looks like you already have the three apples I need to finish up my batch. Thanks for your help. Here are a few horseshoes for your trouble.</text>
           </object>
           <object type="questData.AddHorseshoesAction">
             <count>5</count>
@@ -3373,10 +3371,10 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Merci infiniment pour ce délicieux beurre bien crémeux.</text>
+            <text>Thank you so much for this delicious, wonderfully creamy butter.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Maintenant, il me faut des pommes. Beaucoup de pommes rouges bien mûres. Peux-tu me faire pousser 3 pommes ?</text>
+            <text>Now, I need apples. Lots of ripe red apples. Can you grow three apples for me?</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>P004SeedTemplate</itemId>
@@ -3390,7 +3388,7 @@
       </line>
     </quest>
     <quest id="QUE-0000002234" targetTemplate="P004Template">
-      <description>Rassemble 3 pommes</description>
+      <description>Gather 3 apples</description>
       <line description="Complete">
         <trigger>
           <object type="questData.ActionTrigger">
@@ -3409,7 +3407,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>Je devrais apporter ces pommes à Mother Comfort.</text>
+            <text>I should bring those apples to Mother Comfort.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002235</questId>
@@ -3427,13 +3425,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Apporte-moi 3 pommes. Tu peux les faire pousser toi-même.</text>
+            <text>Bring me 3 apples. You can grow them yourself.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002235">
-      <description>Apporte 3 pommes à Mother Comfort.</description>
+      <description>Bring 3 apples to Mother Comfort.</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -3451,7 +3449,7 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Merci bien pour ces pommes. Voici quelques fers à cheval pour ton dur labeur. Les pommes étaient le dernier ingrédient dont j’avais besoin. </text>
+            <text>Thanks a lot for these apples. Here are some horseshoes for your hard work. The apples were the last ingredient I needed.</text>
           </object>
           <object type="questData.AddHorseshoesAction">
             <count>5</count>
@@ -3474,7 +3472,7 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>S'il te plaît, apporte-moi 3 pommes. Tu peux les faire pousser toi-même.</text>
+            <text>Please bring me 3 apples. You can grow them yourself.</text>
           </object>
         </actions>
       </line>
