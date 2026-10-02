@@ -673,7 +673,7 @@ class QuestManager {
         "GiveItemTrigger": this.#giveItemTrigger,
         "ApplyItemTrigger": this.#giveItemTrigger, // TODO double check this works
         "DialogueChoiceTrigger": this.#dialogueChoiceTrigger,
-        "PlantGrownInRadiusTrigger": this.#plantGrownInRadiusTrigger,
+        "PlantGrownInRadiusTrigger": this.#missingTrigger,
         "TradeTrigger": this.#missingTrigger,
         "ApplicationStartTrigger": this.#applicationStartTrigger,
         "NullTrigger": this.#nullTrigger
@@ -682,12 +682,6 @@ class QuestManager {
     #missingTrigger (phaserScene, trigger, activeQuestIndex, lineIndex, triggerData) {
         console.warn(`Missing trigger: ${trigger.type}`)
         return false
-    }
-
-    #plantGrownInRadiusTrigger(phaserScene, trigger, activeQuestIndex, lineIndex, triggerData) {
-        let questGlobalID = phaserScene.sharedData.quest.logic.activeQuests[activeQuestIndex];
-        phaserScene.sharedData.quest.manager.doQuestAction(questGlobalID, lineIndex);
-        return true;
     }
 
     #applicationStartTrigger(phaserScene, trigger, activeQuestIndex, lineIndex, triggerData) {
