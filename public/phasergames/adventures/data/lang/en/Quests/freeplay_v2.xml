@@ -1914,7 +1914,7 @@
   <adventure id="ADV-0000000907">
     <description>Bella's Letters</description>
     <quest id="QUE-0000002152">
-      <description>Parle à Bella</description>
+      <description>Talk to Bella</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -1927,13 +1927,13 @@
           <object type="questData.LogAdventureBeginAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Bonjour. Je suis Bella. Merci de m'avoir avertie au sujet d'Ivenna. Je ferai de mon mieux pour avertir les autres. Ensemble, nous pourrons arrêter Ivenna.</text>
+            <text>Hello. I am Bella. Thank you for warning me about Ivenna. I will do my best to warn the others. Together, we can stop Ivenna.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Bienvenue à Canter Hollow, notre petite ville de Trails End. Nous sommes ici à la Place de la Fontaine, mais tu trouveras aussi l'allée de Bagatella à l'est et la rue des Artisans à l'ouest.</text>
+            <text>Welcome to Canter Hollow, our little town of Trails End. We are here at Fountain Square, but you’ll also find Bagatella Lane to the east and Artisans' Street to the west.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Pendant que tu explores le reste de Canter Hollow, peut-être que tu pourras remettre ces deux lettres à mes amis Hannah Lovett et Shine Anders.</text>
+            <text>While you explore the rest of Canter Hollow, perhaps you could deliver these two letters to my friends Hannah Lovett and Shine Anders.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I051Template</itemId>
@@ -3479,9 +3479,9 @@
     </quest>
   </adventure>
   <adventure id="ADV-0000000921">
-    <description>Cercle des fées</description>
+    <description>Fairy circle</description>
     <quest id="QUE-0000002226" targetZone="Z012">
-      <description>Parle à Tyri.</description>
+      <description>Talk to Tyri.</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -3494,10 +3494,10 @@
           <object type="questData.LogAdventureBeginAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Bonjour à toi, je suis ravi de te voir ici ! &lt;br/&gt; Mon cercle des fées me prend tellement de temps que je n’ai plus une minute à moi. Un cercle des fées est un endroit où les champignons poussent en cercle. Et ces champignons demandent sans arrêt des choses différentes à manger.</text>
+            <text>Hello there, I’m delighted to see you here! &lt;br/&gt; My fairy circle takes up so much of my time that I don’t have a single minute to myself. A fairy circle is a place where mushrooms grow in a circle. And these mushrooms are constantly asking for different things to eat.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Voudrais-tu nourrir les champignons jusqu’à ce qu’ils aient poussé ? </text>
+            <text>Would you like to feed the mushrooms until they have grown?</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002250</questId>
@@ -3507,7 +3507,7 @@
       </line>
     </quest>
     <quest id="QUE-0000002250" targetZone="Z012">
-      <description>Parle au cercle des fées</description>
+      <description>Speak to the fairy circle.</description>
       <line description="Complete - give Raspberry with Pine nuts">
         <trigger>
           <object type="questData.GiveItemTrigger">
@@ -3524,7 +3524,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Des framboises, c'est tellement bon !&lt;br/&gt;L'idéal pour els champignons.&lt;br/&gt;Mais il faut aussi des pignons !&lt;br/&gt;Des pignons pour les champignons !</text>
+            <text>Raspberries—they're so delicious!&lt;br/&gt;Perfect for mushrooms.&lt;br/&gt;But you need pine nuts, too!&lt;br/&gt;Pine nuts for the mushrooms!</text>
             <identifier>M014</identifier>
           </object>
           <object type="questData.AddQuestAction">
@@ -3544,7 +3544,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Des framboises, c'est tellement bon !&lt;br/&gt;L'idéal pour els champignons.&lt;br/&gt;Mais il faut aussi des pignons !&lt;br/&gt;Des pignons pour les champignons !</text>
+            <text>Raspberries, they're so delicious!&lt;br/&gt;Perfect for mushrooms.&lt;br/&gt;But you need pine nuts, too!&lt;br/&gt;Pine nuts for the mushrooms!</text>
             <identifier>M014</identifier>
           </object>
           <object type="questData.AddQuestAction">
@@ -3569,8 +3569,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>S'il te plaît, &lt;br/&gt;Apporte-nous des framboises !
-</text>
+            <text>Please, &lt;br/&gt;Bring us raspberries!</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002252</questId>
@@ -3589,7 +3588,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Soyez gentille, donnez-nous des framboises, &lt;br/&gt; Les framboises, c'est l'extase !</text>
+            <text>Be nice, five us raspberries, &lt;br/&gt; Raspberries are pure bliss!</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002251</questId>
@@ -3607,13 +3606,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>As-tu nourri les champignons ?</text>
+            <text>Did you feed the mushrooms?</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002251" targetTemplate="DirtTemplate" targetZone="Z012">
-      <description>Fais pousser des framboises</description>
+      <description>Grow raspberries</description>
       <line description="Complete">
         <trigger>
           <object type="questData.ActionTrigger">
@@ -3628,7 +3627,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>Je devrais apporter ça au cercle des fées</text>
+            <text>I should bring those to the fairy circle</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002252</questId>
@@ -3646,13 +3645,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Soyez gentille, donnez-nous des framboises, &lt;br/&gt; Les framboises, c'est l'extase !</text>
+            <text>Be nice, five us raspberries, &lt;br/&gt; Raspberries are pure bliss!</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002252" targetTemplate="M014Template" targetZone="Z012">
-      <description>Donne les framboises au cercle des fées</description>
+      <description>Give the raspberries to the fairy circle</description>
       <line description="Complete with Pine Nuts">
         <trigger>
           <object type="questData.GiveItemTrigger">
@@ -3669,7 +3668,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Des framboises, c'est tellement bon !&lt;br/&gt;L'idéal pour els champignons.&lt;br/&gt;Mais il faut aussi des pignons !&lt;br/&gt;Des pignons pour les champignons !</text>
+            <text>Raspberries, they're so delicious!&lt;br/&gt;Perfect for mushrooms.&lt;br/&gt;But you need pine nuts, too!&lt;br/&gt;Pine nuts for the mushrooms!</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002255</questId>
@@ -3688,7 +3687,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Que ces fruits sont savoureux ! &lt;br/&gt; Ils rendent les champignons heureux ! &lt;br/&gt; Apportez-nous des pignons, &lt;br/&gt; des pignons pour les champignons !</text>
+            <text>How tasty these fruits are! &lt;br/&gt; They make the mushrooms happy! &lt;br/&gt; Bring us pine nuts, &lt;br/&gt; pine nuts for the mushrooms!</text>
             <identifier>M014</identifier>
           </object>
           <object type="questData.AddQuestAction">
@@ -3707,7 +3706,7 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Soyez gentille, donnez-nous des framboises, &lt;br/&gt; Les framboises, c'est l'extase !</text>
+            <text>Be nice, five us raspberries, &lt;br/&gt; Raspberries are pure bliss!</text>
           </object>
         </actions>
       </line>
@@ -3725,7 +3724,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>Je devrais apporter ça au cercle des fées</text>
+            <text>I should bring this to the fairy circle</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002255</questId>
@@ -3743,13 +3742,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Nous voulons croquer des pignons, &lt;br/&gt;Qui raviront les champignons !</text>
+            <text>We want to munch on pine nuts, &lt;br/&gt;That will delight the mushrooms!</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002255" targetTemplate="M014Template" targetZone="Z012">
-      <description>Donne des pignons de pin au cercle des fées</description>
+      <description>Give pine nuts to the fairy circle.</description>
       <line description="Complete with Watermelon">
         <trigger>
           <object type="questData.GiveItemTrigger">
@@ -3766,7 +3765,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Ces pignons sont si mignons. &lt;br/&gt; Ravis sont les champignons ! &lt;br/&gt; Ce que nous voulons, ce sont des pastèques, &lt;br/&gt;Juteuses et goûteuses, dans notre bec !</text>
+            <text>These pine nuts are so cute. &lt;br/&gt;The mushrooms are delighted! &lt;br/&gt;What we want are watermelons, &lt;br/&gt;Juicy and tasty, in our beaks!</text>
             <identifier>M015</identifier>
           </object>
           <object type="questData.TemporaryAnimationAction">
@@ -3803,7 +3802,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Ces pignons sont si mignons. &lt;br/&gt; Ravis sont les champignons ! &lt;br/&gt; Ce que nous voulons, ce sont des pastèques, &lt;br/&gt;Juteuses et goûteuses, dans notre bec !</text>
+            <text>These pine nuts are so cute. &lt;br/&gt;The mushrooms are delighted! &lt;br/&gt;What we want are watermelons, &lt;br/&gt;Juicy and tasty, in our beaks!</text>
             <identifier>M014</identifier>
           </object>
           <object type="questData.TemporaryAnimationAction">
@@ -3839,13 +3838,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Nous voulons croquer des pignons, &lt;br/&gt;Qui raviront les champignons !</text>
+            <text>We want to munch on pine nuts, &lt;br/&gt;That will delight the mushrooms!</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002256" targetTemplate="DirtTemplate" targetZone="Z012">
-      <description>Fais pousser une pastèque</description>
+      <description>Grow a watermelon</description>
       <line description="Complete">
         <trigger>
           <object type="questData.ContextItemTrigger">
@@ -3857,7 +3856,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>Je devrais apporter ça au cercle des fées</text>
+            <text>I should bring this to the fairy circle</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002257</questId>
@@ -3875,13 +3874,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Ce que nous voulons, ce sont des pastèques, &lt;br/&gt;Juteuses et goûteuses, dans notre bec !</text>
+            <text>What we want are watermelons, &lt;br/&gt;Juicy and tasty, in our beaks!</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002257" targetTemplate="M015Template" targetZone="Z012">
-      <description>Donne une pastèque au cercle des fées</description>
+      <description>Give the watermelon to the fairy circle</description>
       <line description="Complete with Plumberry">
         <trigger>
           <object type="questData.GiveItemTrigger">
@@ -3898,10 +3897,10 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Ces pastèques sont délectables,&lt;br/&gt;Reviens demain à notre table. &lt;br/&gt; Nous voulons une tarte aux plumberries &lt;br/&gt; Ou alors nous ferons une crise !</text>
+            <text>These watermelons are delicious,&lt;br/&gt;Come back to our table tomorrow.&lt;br/&gt;We want a plumberry pie&lt;br/&gt;Or else we’ll throw a tantrum!</text>
           </object>
           <object type="questData.MonologueAction">
-            <text>Mother Comfort sait tout cuisiner. Je devrais lui demander si elle peut me faire une tarte aux plumberries.</text>
+            <text>Mother Comfort knows how to cook everything. I should ask her if she can make me a plumberry pie.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002260</questId>
@@ -3920,11 +3919,11 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Ces pastèques sont délectables,&lt;br/&gt;Reviens demain à notre table. &lt;br/&gt; Nous voulons une tarte aux plumberries &lt;br/&gt; Ou alors nous ferons une crise !</text>
+            <text>These watermelons are delicious,&lt;br/&gt;Come back to our table tomorrow.&lt;br/&gt;We want a plumberry pie&lt;br/&gt;Or else we’ll throw a tantrum!</text>
             <identifier>M015</identifier>
           </object>
           <object type="questData.MonologueAction">
-            <text>Mother Comfort sait tout cuisiner. Je devrais lui demander si elle peut me faire une tarte aux plumberries.</text>
+            <text>Mother Comfort knows how to cook everything. I should ask her if she can make me a plumberry pie.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002258</questId>
@@ -3942,13 +3941,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Ce que nous voulons, ce sont des pastèques, &lt;br/&gt;Juteuses et goûteuses, dans notre bec !</text>
+            <text>What we want are watermelons, &lt;br/&gt;Juicy and tasty, in our beaks!</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002258">
-      <description>Parle à Mother Comfort</description>
+      <description>Talk to Mother Comfort</description>
       <line description="Complete with Plumberry">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -3965,7 +3964,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Merci pour les plumberries. Voici une délicieuse tarte aux plumberries pour toi. </text>
+            <text>Thanks for the plumberries. Here is a delicious plumberry pie for you. </text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I013bTemplate</itemId>
@@ -3992,7 +3991,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Le cercle des fées veut une tarte aux plumberries ? Eh bien ma chérie, si tu fais pousser des plumberries, je te ferai ta tarte. Voici une bouture de plumberry.</text>
+            <text>Does the fairy circle want a plumberry pie? Well, my dear, if you grow some plumberries, I’ll make you that pie. Here is a plumberry seed.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>P038SeedTemplate</itemId>
@@ -4014,13 +4013,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Nous voulons une tarte aux plumberries &lt;br/&gt; Ou alors nous ferons une crise !</text>
+            <text>We want a plumberry pie&lt;br/&gt;Or else we’ll throw a tantrum!</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002259" targetTemplate="DirtTemplate" targetZone="Z012">
-      <description>Fais pousser une plumberry </description>
+      <description>Grow a plumberry </description>
       <line description="Complete">
         <trigger>
           <object type="questData.ActionTrigger">
@@ -4035,7 +4034,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>Je devrais apporter ça à Mother Comfort</text>
+            <text>I should bring this to Mother Comfort</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002260</questId>
@@ -4053,7 +4052,7 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Si tu fais pousser des plumberries, je te ferai une tarte.</text>
+            <text>If you grow plumberries, I'll make you a pie.</text>
           </object>
         </actions>
       </line>
@@ -4067,13 +4066,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Nous voulons une tarte aux plumberries &lt;br/&gt; Ou alors nous ferons une crise !</text>
+            <text>We want a plumberry pie&lt;br/&gt;Or else we’ll throw a tantrum!</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002260">
-      <description>Apporte des plumberries à Mother Comfort</description>
+      <description>Bring plumberries to Mother Comfort</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -4090,7 +4089,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Merci pour les plumberries. Voici une délicieuse tarte aux plumberries pour toi.</text>
+            <text>Thanks for the plumberries. Here is a delicious plum-berry pie for you.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I013bTemplate</itemId>
@@ -4116,13 +4115,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Nous voulons une tarte aux plumberries &lt;br/&gt; Ou alors nous ferons une crise !</text>
+            <text>We want a plumberry pie&lt;br/&gt;Or else we’ll throw a tantrum!</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002261" targetTemplate="M015Template" targetZone="Z012">
-      <description>Apporte la tarte aux plumberries au cercle des fées</description>
+      <description>Bring the plumberry pie to the fairy circle.</description>
       <line description="Complete">
         <trigger>
           <object type="questData.GiveItemTrigger">
@@ -4134,11 +4133,11 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Les plumberries, ce plat royal,&lt;br/&gt;Sont pour nous tous un vrai régal ! &lt;br/&gt; Ce que nous voulons c'est du crottin, &lt;br/&gt; Il nous rendra tout plein d'entrain !</text>
+            <text>Plumberries, that royal treat,&lt;br/&gt;Are a delight for us to eat!&lt;br/&gt;What we want is dung,&lt;br/&gt;It puts a spring in our step!</text>
             <identifier>M015</identifier>
           </object>
           <object type="questData.MonologueAction">
-            <text>Je parie que Cade a du crottin dans son écurie.</text>
+            <text>I bet Cade has manure in his stable.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002262</questId>
@@ -4156,7 +4155,7 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Apporte la tarte aux plumberries au cercle des fées</text>
+            <text>Bring the plumberry pie to the fairy circle.</text>
           </object>
         </actions>
       </line>
@@ -4170,13 +4169,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Nous voulons une tarte aux plumberries &lt;br/&gt; Ou alors nous ferons une crise !</text>
+            <text>We want a plumberry pie&lt;br/&gt;Or else we’ll throw a tantrum!</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002262">
-      <description>Parle à Cade</description>
+      <description>Talk to Cade</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -4188,7 +4187,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Du crottin ? Beurk. Ces champignons féeriques ont vraiment un grain. J’ai tout ce qu’il te faut dans l’écurie.</text>
+            <text>Horse manure? Yuck. Those fairy mushrooms are truly nuts. I’ve got everything you need in the stable.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I032Template</itemId>
@@ -4210,13 +4209,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Ce que nous voulons manger, &lt;br/&gt;C’est du crottin tout frais.</text>
+            <text>What we want to eat &lt;br/&gt;Is fresh dung.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002263" targetTemplate="M015Template" targetZone="Z012">
-      <description>Apporte le crottin au cercle des fées</description>
+      <description>Bring the dung to the fairy ring.</description>
       <line description="Complete">
         <trigger>
           <object type="questData.GiveItemTrigger">
@@ -4228,7 +4227,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Le crottin de cheval est un mets de choix, &lt;br/&gt;Qui nous rend beaux et forts à la fois !</text>
+            <text>Horse manure is a choice delicacy, &lt;br/&gt;That makes us both beautiful and strong!</text>
             <identifier>M015</identifier>
           </object>
           <object type="questData.TemporaryAnimationAction">
@@ -4249,7 +4248,7 @@
             <y>46</y>
           </object>
           <object type="questData.MonologueAction">
-            <text>Je devrais dire à Tyri que le cercle des fées a bien poussé.</text>
+            <text>I should tell Tyri that the fairy cercle has grown well.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002264</questId>
@@ -4267,13 +4266,13 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Apporte le crottin au cercle des fées</text>
+            <text>Bring the dung to the fairy ring.</text>
           </object>
         </actions>
       </line>
     </quest>
     <quest id="QUE-0000002264" targetZone="Z012">
-      <description>Parle à Tyri</description>
+      <description>Talk to Tyri</description>
       <line description="Complete">
         <trigger>
           <object type="questData.TalkQuestTrigger">
@@ -4286,7 +4285,7 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Merci à toi pour avoir nourri mon cercle des fées ! Tu es une merveilleuse amie. J'apprécie beaucoup ce que tu as fait.</text>
+            <text>Thank you for nurturing my fairy circle! You are a wonderful friend. I really appreciate what you’ve done.</text>
           </object>
           <object type="questData.RemoveQuestAction" />
           <object type="questData.ShowAdventureCompleteAction" />
