@@ -673,7 +673,7 @@ class QuestManager {
         "GiveItemTrigger": this.#giveItemTrigger,
         "ApplyItemTrigger": this.#giveItemTrigger, // TODO double check this works
         "DialogueChoiceTrigger": this.#dialogueChoiceTrigger,
-        "PlantGrownInRadiusTrigger": this.#missingTrigger,
+        "PlantGrownInRadiusTrigger": this.#plantGrownInRadius,
         "TradeTrigger": this.#missingTrigger,
         "ApplicationStartTrigger": this.#applicationStartTrigger,
         "NullTrigger": this.#nullTrigger
@@ -794,6 +794,26 @@ class QuestManager {
             phaserScene.sharedData.quest.manager.doQuestAction(questGlobalID, lineIndex);
             return true
         }
+        return false
+    }
+
+    #plantGrownInRadius(phaserScene, trigger, activeQuestIndex, lineIndex, triggerData) {
+        let questGlobalID = phaserScene.sharedData.quest.logic.activeQuests[activeQuestIndex];
+        const centerX = parseInt(trigger.centerX)
+        const centerY = parseInt(trigger.centerY)
+        const radius = parseInt(trigger.radius)
+
+        if (trigger 
+            && trigger.zoneId
+            && trigger.zoneId === phaserScene.zoneConfig.ID
+            && triggerData.x !== undefined
+            && triggerData.y !== undefined
+        ) {
+            if (Math.abs(triggerData.x - centerX) + Math.abs(triggerData.y - centerY) <= radius) {
+                phaserScene.sharedData.quest.manager.doQuestAction(questGlobalID, lineIndex);
+                return true;
+            }
+        } 
         return false
     }
 

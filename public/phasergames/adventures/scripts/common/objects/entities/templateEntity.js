@@ -278,6 +278,16 @@ class TemplateEntity extends Entity {
                     // Give magic to the tree on first full growth
                     if (parseInt(plantData.spriteData.stages[0].text) === this.currentStage && !this.hasGivenMagic)
                     {
+                        let triggerData = {
+                            type: "PlantGrownInRadiusTrigger",
+                            templateID: this.templateID,
+                            zoneID: this.zoneID,
+                            x: this.startPos[0],
+                            y: this.startPos[1],
+                        }
+                        this.zoneScene.sharedData.quest.manager.tryTriggerQuest(this.zoneScene, triggerData)
+                        
+                        
                         this.hasGivenMagic = true;
                         this.zoneScene.sharedData.entities.spawnedEntities[this.zoneScene.sharedData.global.currentZone][this.entityKey].respawnConfig.hasGivenMagic = this.hasGivenMagic
                         this.zoneScene.sharedData.magicTree.logic.manager.addExperience(parseInt(plantData.growthData.magic[0].text));
