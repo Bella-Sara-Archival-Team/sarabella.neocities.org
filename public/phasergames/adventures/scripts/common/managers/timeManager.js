@@ -15,6 +15,9 @@ class TimeManager
                 this.startAt = 0;
             }
         }
+        if (this.phaserScene.sharedData.saving.getGameData(GAME_DATA_TYPE.entityTime) !== undefined) {
+            this.phaserScene.sharedData.timeTrackedEntities = this.phaserScene.sharedData.saving.getGameData(GAME_DATA_TYPE.entityTime)
+        }
         this.isDay = true
         this.nightLength = 30000 // should be 30000
         this.dayLength = 180000 // should be 180000

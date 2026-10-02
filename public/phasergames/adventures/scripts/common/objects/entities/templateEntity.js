@@ -19,14 +19,6 @@ class TemplateEntity extends Entity {
         if (additionalConfig) {
             if (additionalConfig.isWatered) {
                 this.isWatered = additionalConfig.isWatered
-
-                // TODO: replace with actual time data saving
-                if (this.zoneScene.sharedData.entities.timeTrackedEntities[this.zoneID][this.entityKey] === undefined) {
-                    this.zoneScene.sharedData.entities.timeTrackedEntities[this.zoneID][this.entityKey] = {
-                        startTime: this.zoneScene.timeManager.getCurrentTime(),
-                        daysCount: 0
-                    }
-                }
             }
             if (additionalConfig.hasGivenMagic) {
                 this.hasGivenMagic = additionalConfig.hasGivenMagic
