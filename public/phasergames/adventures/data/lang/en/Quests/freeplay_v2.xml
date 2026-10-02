@@ -1987,7 +1987,7 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>A letter from Bella for me? Quick, quick, I want to know what she wrote! Thank you so much.
+            <text>A letter from Bella for me? Quick, quick, I want to know what she wrote! Thank you so much.</text>
             <identifier>C011</identifier>
           </object>
           <object type="questData.ShowAdventureCompleteAction" />
@@ -2143,7 +2143,7 @@
           <object type="questData.LogAdventureBeginAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Would you give me a hand? I have a scoop: I will interview Mother Comfort, but I promised to my dad that I will deliver the newspaper today. I didn't have time to deliver Mr Bartholomew's one yet. Could you bring it to him for me? Thank you.</text>
+            <text>Would you give me a hand? I have a scoop: I will interview Mother Comfort, but I promised my dad that I will deliver the newspaper today. I didn't have time to deliver Mr Bartholomew's one yet. Could you bring it to him for me? Thank you.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I070Template</itemId>
