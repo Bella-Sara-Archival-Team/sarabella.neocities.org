@@ -812,7 +812,16 @@ class QuestManager {
             || questLine.conditions.object[0].type === undefined
         ) {return true}
 
-        return this.#QUEST_CONDITIONS[questLine.conditions.object[0].type](phaserScene, questData, lineIndex, trigger)
+        var conditionsMet = true;
+        for (let i = 0; i < questLine.conditions.object.length; i++)
+        {
+            if (!this.#QUEST_CONDITIONS[questLine.conditions.object[i].type](phaserScene, questData, lineIndex, trigger, i))
+            {
+                conditionsMet = false;
+                break;
+            }
+        }
+        return conditionsMet;
     }
 
     #QUEST_CONDITIONS = {
@@ -824,50 +833,52 @@ class QuestManager {
         "CharacterNearCondition": this.#characterNearCondition // TODO: to test
     }
 
-    #missingCondition (phaserScene, questData, lineIndex, trigger) {
+    #missingCondition (phaserScene, questData, lineIndex, trigger, index) {
         const questLine = questData.line[lineIndex]
-        console.warn(`Missing condition: ${questLine.conditions.object[0].type}`)
+        console.warn(`Missing condition: ${questLine.conditions.object[index].type}`)
     }
 
-    #actionOnTemplate(phaserScene, questData, lineIndex, trigger) {
+    #actionOnTemplate(phaserScene, questData, lineIndex, trigger, index) {
         const questLine = questData.line[lineIndex]
-        return questLine.conditions.object[0].template[0] === trigger.template
+        return questLine.conditions.object[index].template[0] === trigger.template
     }
 
-    #hasMultipleItemsCondition(phaserScene, questData, lineIndex, trigger) {
+    #hasMultipleItemsCondition(phaserScene, questData, lineIndex, trigger, index) {
         const questLine = questData.line[lineIndex]
-        const condition = questLine.conditions.object[0]
+        const condition = questLine.conditions.object[index]
         
         return phaserScene.sharedData.inventory.allItems[condition.template[0]] >= parseInt(condition.count[0])
     }
 
-    #containsTokenItemCondition(phaserScene, questData, lineIndex, trigger){
+    #containsTokenItemCondition(phaserScene, questData, lineIndex, trigger, index){
         let tokens = phaserScene.sharedData.quest.manager.QUEST_TOKENS;
-        if (!tokens[trigger.key]){return false;}
-        return tokens[trigger.key].includes(trigger.item[0]);
+        const condition = questData.line[lineIndex].conditions.object[index]
+        if (!tokens[condition.key]){return false;}
+        return tokens[condition.key].includes(condition.item[0]);
     }
 
-    #hasQuestCondition(phaserScene, questData, lineIndex, trigger){
+    #hasQuestCondition(phaserScene, questData, lineIndex, trigger, index){
         let finishedQuest = trigger.questId[0];
         let quest = this.getQuestPerID([null, null, questData]);
         if (!quest) {return false};
         return quest.status == this.QUEST_STATES.FINISHED;
     }
 
-    #tokenGreaterThanOrEqualCondition(phaserScene, questData, lineIndex, trigger){
+    #tokenGreaterThanOrEqualCondition(phaserScene, questData, lineIndex, trigger, index){
         let tokens = phaserScene.sharedData.quest.manager.QUEST_TOKENS;
-        if (!tokens[trigger.key]){return false;}
+        const condition = questData.line[lineIndex].conditions.object[index]
+        if (!tokens[condition.key]){return false;}
 
         // We force the non-item tokens at 0 to easily get/set them
-        if (typeof tokens[trigger.key][0] === number)
+        if (typeof tokens[condition.key][0] === number)
         {
-            let value = parseInt(tokens[trigger.key][0]);
-            return value >= trigger.valueText;
+            let value = parseInt(tokens[condition.key][0]);
+            return value >= condition.valueText;
         }
         return false;
     }
 
-    #characterNearCondition(phaserScene, questData, lineIndex, trigger){
+    #characterNearCondition(phaserScene, questData, lineIndex, trigger, index){
         return this.#stopNearTrigger(phaserScene, questData, lineIndex, trigger);
     }
 
