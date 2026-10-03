@@ -278,6 +278,7 @@ class TemplateEntity extends Entity {
                     // Give magic to the tree on first full growth
                     if (parseInt(plantData.spriteData.stages[0].text) === this.currentStage && !this.hasGivenMagic)
                     {
+                        // See if plant growth triggers any quests
                         let triggerData = {
                             type: "PlantGrownInRadiusTrigger",
                             templateID: this.templateID,
@@ -287,7 +288,7 @@ class TemplateEntity extends Entity {
                         }
                         this.zoneScene.sharedData.quest.manager.tryTriggerQuest(this.zoneScene, triggerData)
                         
-                        
+                        // Update growth data and respawn config
                         this.hasGivenMagic = true;
                         this.zoneScene.sharedData.entities.spawnedEntities[this.zoneScene.sharedData.global.currentZone][this.entityKey].respawnConfig.hasGivenMagic = this.hasGivenMagic
                         this.zoneScene.sharedData.magicTree.logic.manager.addExperience(parseInt(plantData.growthData.magic[0].text));

@@ -524,11 +524,13 @@
         "sceneEntryPoints": {
             "default": [62, 5],
             "Z001": [62, 5],
+            "Z013": [85, 38],
             "Z027": [62, 20]
         },
         "sceneExitTiles": {
             "Ti000w": "Z001",
-            "Ti090w": "Z027"
+            "Ti090w": "Z027",
+            "T0076Template": "Z013"
         },
 
         "camBound": {

@@ -82,6 +82,16 @@ class ZoneBase extends Phaser.Scene
                 if (this.zoneConfig.sceneExitTiles && this.zoneConfig.sceneExitTiles[tile]) {
                     this.goToNextZone(this.zoneConfig.sceneExitTiles[tile])
                 }
+            } else {
+                let cells = this.getEntitiesAt(pos.x, pos.y)
+                if (cells && cells.length > 0) {
+                    for (let index = 0; index < cells.length; index++) {
+                        const tile = cells[index];
+                        if (this.zoneConfig.sceneExitTiles && this.zoneConfig.sceneExitTiles[tile]) {
+                            this.goToNextZone(this.zoneConfig.sceneExitTiles[tile])
+                        }
+                    }
+                }
             }
         }
     }
