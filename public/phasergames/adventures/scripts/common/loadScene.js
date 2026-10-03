@@ -61,9 +61,9 @@ class Common_Load extends Phaser.Scene
         if (this.sharedData.entities === undefined) {
             this.sharedData.entities = {}
             this.sharedData.entities.spawnedEntities = {}
-            const timeTrackedEntities = loadData(DATA_TYPES.game, GAME_ID.Adventures)["entityTime"]
-            if (timeTrackedEntities) {
-                this.sharedData.entities.timeTrackedEntities = timeTrackedEntities
+            const gameData = loadData(DATA_TYPES.game, GAME_ID.Adventures)
+            if (gameData && gameData["entityTime"]) {
+                this.sharedData.entities.timeTrackedEntities = gameData["entityTime"]
             } else {
                 this.sharedData.entities.timeTrackedEntities = {}
             }
