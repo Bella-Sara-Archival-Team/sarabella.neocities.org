@@ -286,6 +286,7 @@ class ZoneBase extends Phaser.Scene
 
                                 tile[skins[i]] = zone.add.spine((x*zone.tileWidth/2)+(y*zone.tileWidth/2)+zone.zoneConfig.tileXOffset, (y*zone.tileWidth/4)-(x*zone.tileWidth/4)+zone.zoneConfig.tileYOffset, `${file}JSON`, `${file}Atlas`);
                                 zone.timeManager.setTile(tile[skins[i]], spriteName)
+                                tile.spriteName = spriteName
                                 tile[skins[i]].setDepth((rowCells[x].length - x) + y - ((tileData.gridSize !== undefined) ? tileData.gridSize[0].depth : 0))
 
                                 let scaleX = 1;

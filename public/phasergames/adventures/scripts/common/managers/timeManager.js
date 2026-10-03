@@ -70,14 +70,18 @@ class TimeManager
         if (!tile.skeleton) { return }
         let gameTime = this.isDay ? 'day' : 'night'
         const skeletonData = tile.skeleton.data;
-        const skin = new spine.Skin("custom");
+        let skinName = ""
         if (skeletonData.findSkin(cellValue) !== null){
-            skin.addSkin(skeletonData.findSkin(cellValue));
+            skinName = cellValue
         }
         else if (skeletonData.findSkin(cellValue + '/' + gameTime) !== null){
-            skin.addSkin(skeletonData.findSkin(cellValue + '/' + gameTime));
+            skinName = cellValue + '/' + gameTime
         }   
-        tile.skeleton.setSkin(skin);
+        else {
+            console.log(`Could not find skins for ${cellValue} in ${tile}`)
+            return
+        }
+        tile.skeleton.setSkin(skeletonData.findSkin(skinName));
         tile.skeleton.setToSetupPose();
 
         for (let index = 0; index < tile.skeleton.data.animations.length; index++) {
@@ -98,8 +102,10 @@ class TimeManager
                 for (var x = 0; x < Object.keys(this.phaserScene.tiles[y]).length; x++)
                 {
                     let tile = this.phaserScene.tiles[y][x]
-                    var cellValue = this.phaserScene.tiles[y][x].parsedData.id
-                    this.setTile(tile, cellValue)
+                    if (tile.parsedData && tile[tile.parsedData.skins]) {
+                        let cellValue = tile.spriteName
+                        this.setTile(tile[tile.parsedData.skins], cellValue)
+                    }
                 }
             }
 
