@@ -94,6 +94,7 @@ class uiSuccess extends uiManagerBase
         var continueTxt = this.phaserScene.add.text(continueBtn.x+35, continueBtn.y, this.phaserScene.sharedData.ui.localization.items[0].dialogueContinue[0].text, this.SUCCESS_CONTINUE_PURPLE_SETTINGS)
                             .setOrigin(0)
                             .setScrollFactor(0)
+                            .setInteractive({ useHandCursor: true })
 
         
         this.phaserScene.sharedData[this.key].ui.sparkle = this.phaserScene.add.spine(165, 128, `sparkle-json`, `sparkle-atlas`)
@@ -197,9 +198,12 @@ class uiSuccess extends uiManagerBase
     // ------- UI EVENTS -------
     turnOnEvents(questID)
     {
-        this.phaserScene.sharedData[this.key].ui.elements.continueBtn.on('pointerover', (pointer) => { });
-        this.phaserScene.sharedData[this.key].ui.elements.continueBtn.on('pointerout', (pointer) => { });
+        this.phaserScene.sharedData[this.key].ui.elements.continueBtn.on('pointerover', function (pointer) {this.phaserScene.sharedData[this.key].ui.elements.continueTxt.setColor("#2a63a8ff") }, this);
+        this.phaserScene.sharedData[this.key].ui.elements.continueBtn.on('pointerout', function (pointer) {this.phaserScene.sharedData[this.key].ui.elements.continueTxt.setColor("#792AA8") }, this);
         this.phaserScene.sharedData[this.key].ui.elements.continueBtn.on('pointerup', this.#continueOption, {questID: questID, UI: this});
+        this.phaserScene.sharedData[this.key].ui.elements.continueTxt.on('pointerover', function (pointer) {this.phaserScene.sharedData[this.key].ui.elements.continueTxt.setColor("#2a63a8ff") }, this);
+        this.phaserScene.sharedData[this.key].ui.elements.continueTxt.on('pointerout', function (pointer) {this.phaserScene.sharedData[this.key].ui.elements.continueTxt.setColor("#792AA8") }, this);
+        this.phaserScene.sharedData[this.key].ui.elements.continueTxt.on('pointerup', this.#continueOption, {questID: questID, UI: this});
         this.phaserScene.sharedData.keyboard.space.on("up", this.#continueOption, {questID: questID, UI: this});
         this.phaserScene.sharedData.keyboard.enter.on("up", this.#continueOption, {questID: questID, UI: this});
     }
@@ -209,6 +213,9 @@ class uiSuccess extends uiManagerBase
         this.phaserScene.sharedData[this.key].ui.elements.continueBtn.off('pointerover');
         this.phaserScene.sharedData[this.key].ui.elements.continueBtn.off('pointerout');
         this.phaserScene.sharedData[this.key].ui.elements.continueBtn.off("pointerup", this.#continueOption)
+        this.phaserScene.sharedData[this.key].ui.elements.continueTxt.off('pointerover');
+        this.phaserScene.sharedData[this.key].ui.elements.continueTxt.off('pointerout');
+        this.phaserScene.sharedData[this.key].ui.elements.continueTxt.off("pointerup", this.#continueOption)
         this.phaserScene.sharedData.keyboard.space.off("up", this.#continueOption);
         this.phaserScene.sharedData.keyboard.enter.off("up", this.#continueOption);
     }
