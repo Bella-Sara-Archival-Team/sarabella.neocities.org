@@ -28,9 +28,9 @@
         <conditions />
         <actions>
           <object type="questData.DialogueChoiceAction">
-            <text>Hi there! You now have your very own cottage in Canter Farms. Let me tell you about it.</text>
+            <text>Hi there! You now have your very own cottage in Canter Farms. Let me tell you all about it.</text>
             <choice id="line 1">Yes, please tell me about it.</choice>
-            <choice id="line 2">No thank you, I'll stop by later.</choice>
+            <choice id="line 2">No thank you. I'll stop by later.</choice>
           </object>
         </actions>
       </line>
@@ -48,7 +48,7 @@
             <text>This cottage is yours to decorate as you wish. Enter in the front door behind me.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Any object you can &lt;b&gt;PLACE&lt;/b&gt; from your inventory bag. Just open your inventory and drag and item to your room.</text>
+            <text>Any object you can &lt;b&gt;PLACE&lt;/b&gt; from your inventory bag. Just open your inventory and drag an item to your room.</text>
           </object>
           <object type="questData.DialogueAction">
             <text>Please take this gift to start your decorating. Take this item into your room and set it down.</text>

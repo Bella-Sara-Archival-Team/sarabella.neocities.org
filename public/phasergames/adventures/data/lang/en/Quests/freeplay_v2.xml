@@ -18,7 +18,7 @@
             <text>Great job! I bet you will be an excellent gardener. Let me teach you how to grow plants. </text>
           </object>
           <object type="questData.DialogueImageAction">
-            <text>This is the &lt;b&gt;&lt;i&gt;Remove&lt;/i&gt;&lt;/b&gt; bubble. You can use this option to get rid of objects from the world like weeds or trash. First, click on the weed from the big garden patch in front of me and click the &lt;b&gt;&lt;i&gt;Remove&lt;/i&gt;&lt;/b&gt; bubble.</text>
+            <text>This is the &lt;b&gt;&lt;i&gt;Remove&lt;/i&gt;&lt;/b&gt; bubble. You can use this option to get rid of objects from the world like weeds and trash. First, click on the weed from the big garden patch in front of me and click the &lt;b&gt;&lt;i&gt;Remove&lt;/i&gt;&lt;/b&gt; bubble.</text>
             <imageFileName>Flash/Adventures/Art/Dialogue/Context_Remove.png</imageFileName>
             <hspace>5</hspace>
             <vspace>5</vspace>
@@ -186,7 +186,7 @@
             <text>Nice! The soil is now ready for the next step. Here's a daisy seed to plant. All of your seeds are in your &lt;b&gt;&lt;i&gt;Inventory Bag&lt;/i&gt;&lt;/b&gt;.</text>
           </object>
           <object type="questData.DialogueImageAction">
-            <text>This is your &lt;b&gt;&lt;i&gt;Inventory Bag&lt;/i&gt;&lt;/b&gt;. It's at the bottom of the screen. Click on it and then choose the daisy seed. Then, click on a garden spot to plant it.</text>
+            <text>This is your &lt;b&gt;&lt;i&gt;Inventory Bag&lt;/i&gt;&lt;/b&gt;. It's at the bottom of the screen. Click on it and then choose the daisy seed. Then click on a garden spot to plant it.</text>
             <imageFileName>Flash/Adventures/Art/Dialogue/HUD_Inventory.png</imageFileName>
             <hspace>5</hspace>
             <vspace>5</vspace>
@@ -306,7 +306,7 @@
             <identifier>H047</identifier>
           </object>
           <object type="questData.DialogueImageAction">
-            <text>This is the &lt;b&gt;&lt;i&gt;Pick up&lt;/i&gt;&lt;/b&gt; bubble. Once your plants are fully grown, you can pick them up and place them in your Inventory Bag. Try it now by clicking on your daisy and choosing the &lt;b&gt;&lt;i&gt;Pick up&lt;/i&gt;&lt;/b&gt; bubble.</text>
+            <text>This is the &lt;b&gt;&lt;i&gt;Pick up&lt;/i&gt;&lt;/b&gt; bubble. Once your plants are fully grown, you can pick them up and put them in your Inventory Bag. Try it now by clicking on your daisy and choosing the &lt;b&gt;&lt;i&gt;Pick up&lt;/i&gt;&lt;/b&gt; bubble.</text>
             <imageFileName>Flash/Adventures/Art/Dialogue/Context_Take.png</imageFileName>
             <hspace>5</hspace>
             <vspace>5</vspace>
@@ -400,7 +400,7 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Here's another daisy seed to plant. Remember: planting seeds helps magic return to the North.</text>
+            <text>Here's another daisy seed for you to plant. Remember, planting seeds helps bring magic back to North of North.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>P001SeedTemplate</itemId>
@@ -412,10 +412,10 @@
           </object>
           <object type="questData.ShowAdventureCompleteAction" />
           <object type="questData.DialogueAction">
-            <text>I think we should repair that old bridge to the south so we can cross it safely. I need plant fibers to mix with clay to make mortar and repair it.</text>
+            <text>I think we should repair that old bridge to the south of here so it's safe to cross. I need some plant fiber to mix with clay to make some mortar to hold it together.</text>
           </object>
           <object type="questData.DialogueAction">
-            <text>Here's a bearded corn seed. Bearded corn seeds need more space and time to grow than daisies. You might need to pull up some weeds to make room for it. When the bearded corn has grown, bring it back to me.</text>
+            <text>Here's a tassel corn seed. Tassel corn needs more garden space and time to grow than a daisy. You might need to remove some weeds to make room for it. When the tassel corn is fully grown, please bring it back to me.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>P028SeedTemplate</itemId>
@@ -444,7 +444,7 @@
           <object type="questData.LogAdventureBeginAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.MonologueAction">
-            <text>I should report this to Wings.</text>
+            <text>I should bring this back to Wings.</text>
           </object>
           <object type="questData.AddQuestAction">
             <questId>QUE-0000002127</questId>
@@ -462,7 +462,7 @@
         <conditions />
         <actions>
           <object type="questData.DialogueAction">
-            <text>Have you grown the bearded corn? Remember that you can find the bearded corn seed in your &lt;b&gt;&lt;i&gt;Inventory Bag&lt;/i&gt;&lt;/b&gt;at the bottom of the screen.</text>
+            <text>Have you grown the bearded corn? Remember that you can find the bearded corn seed in your &lt;b&gt;&lt;i&gt;Inventory Bag&lt;/i&gt;&lt;/b&gt; at the bottom of the screen.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>P028SeedTemplate</itemId>
@@ -519,7 +519,7 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Thank you so much for your help. I made the mortar: you can use it to repair the bridge. Apply the mortar to the bridge and let it dry.</text>
+            <text>TGreat, thank you for your help. I’ve mixed the mortar so you can use it to patch the broken bridge. Just add the mortar to the bridge and let it dry.</text>
           </object>
           <object type="questData.AddMultipleInventoryAction">
             <itemId>I019Template</itemId>
@@ -576,11 +576,11 @@
         <actions>
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>To apply the mortar, click on the bridge then on the &lt;b&gt;&lt;i&gt;Give&lt;/i&gt;&lt;/b&gt; bubble and choose the mortar.</text>
+            <text>To apply the mortar, click on the bridge then click on the &lt;b&gt;&lt;i&gt;Give&lt;/i&gt;&lt;/b&gt; bubble and select the lump of mortar.</text>
             <identifier>H047</identifier>
           </object>
           <object type="questData.DialogueImageAction">
-            <text>This is the &lt;b&gt;&lt;i&gt;Give&lt;/i&gt;&lt;/b&gt; bubble. When you want to take something from your inventory and give it to someone or use it on something, choose this option. Try it now by clicking on the broken bridge and then choosing the &lt;b&gt;&lt;i&gt;Give&lt;/i&gt;&lt;/b&gt; bubble.</text>
+            <text>This is the &lt;b&gt;&lt;i&gt;Give&lt;/i&gt;&lt;/b&gt; bubble. When you want to take something out of your Inventory Bag and give it to someone or use it on something, choose this option. Try it now by clicking on the broken bridge and then choose the &lt;b&gt;&lt;i&gt;Give&lt;/i&gt;&lt;/b&gt; bubble.</text>
             <imageFileName>Flash/Adventures/Art/Dialogue/Context_Give.png</imageFileName>
             <hspace>5</hspace>
             <vspace>5</vspace>
@@ -700,7 +700,7 @@
           <object type="questData.LogAdventureEndAction" />
           <object type="questData.LogQuestEndAction" />
           <object type="questData.DialogueAction">
-            <text>Oh joy! The bridge is safe again thanks to you. Here are some horseshoes for your trouble. Oh, but what do I see? It looks like the wolf over there has captured the otter with a Starstone otter. Go see if you can help it.</text>
+            <text>Happy day! The bridge is safe and sound thanks to you. Here are some horseshoes for your help. Oh my! It looks like that wolf over there has captured the Starstone otter. Go see if you can help her out.</text>
             <identifier>C001</identifier>
           </object>
           <object type="questData.AddHorseshoesAction">

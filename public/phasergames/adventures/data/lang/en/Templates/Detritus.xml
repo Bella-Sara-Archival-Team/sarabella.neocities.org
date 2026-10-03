@@ -271,7 +271,7 @@
       <className>T0170a</className>
     </component>
     <component name="ToolTip">
-      <ToolTipText>Snaill shell</ToolTipText>
+      <ToolTipText>Snail shell</ToolTipText>
     </component>
     <component name="TakeCommand">
       <template>I062Template</template>
