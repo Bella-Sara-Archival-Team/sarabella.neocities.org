@@ -6,6 +6,7 @@ const GAME_DATA_TYPE = {
     time: "time",
     quest: "quest",
     entities: "entities",
+    entityTime: "entityTime",
     inventory: "inventory",
     tree: "tree",
     player: "player"
