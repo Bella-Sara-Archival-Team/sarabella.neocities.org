@@ -310,6 +310,7 @@ class TemplateEntity extends Entity {
 
         // Check spawn time has elapsed
         const timeData = this.zoneScene.sharedData.entities.timeTrackedEntities[this.zoneID][this.entityKey]
+        // const oldTimeData = structuredClone(timeData)
         if (timeData !== undefined) {
             const countDay = spawnTimeType === "Day"
             const countNight = spawnTimeType === "Night"
@@ -325,6 +326,7 @@ class TemplateEntity extends Entity {
         this.resetTimeData()
 
         // Check if spawning is blocked
+        if (this.zoneScene.sharedData.disableSpawns) {return}
         const spawnType = spawnerData.spawnType
         const entities = this.zoneScene.getEntitiesAt(this.startPos[0], this.startPos[1])
         if (entities !== undefined) {
@@ -341,6 +343,7 @@ class TemplateEntity extends Entity {
 
         // If all conditions met, try spawning
         const random = Math.random()
+        // console.log(this.entityKey, oldTimeData, this.zoneScene.timeManager.getCurrentTime() - oldTimeData.startTime)
         let chanceCounter = 0
         for (let index = 0; index < spawnType.length; index++) {
             const type = spawnType[index];

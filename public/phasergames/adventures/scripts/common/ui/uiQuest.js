@@ -476,7 +476,7 @@ class uiQuest extends uiManagerBase
                 if (pointer.isDown)
                 {
                     const slotNumber = Object.entries(context.shownQuests).length - 1
-                    console.log(slotNumber)
+                    // console.log(slotNumber)
                     const scrollBar = context.phaserScene.sharedData[context.key].ui.elements.scrollBar
 
                     const topPos = scrollZone.y + (scrollBar.height/2)

@@ -7,6 +7,7 @@ class ZoneBase extends Phaser.Scene
 
     init (sharedData) {
         this.sharedData = sharedData
+        this.sharedData.disableSpawns = true
         // Set zone variables from shared data here (before preload)
         if (sharedData.zone.config[sharedData.global.currentZone]) {
             this.zoneConfig = sharedData.zone.config[sharedData.global.currentZone]
@@ -57,6 +58,8 @@ class ZoneBase extends Phaser.Scene
 
         this.instantiateEntities();
         this.sharedData.quest.manager.tryZoneStartTriggers()
+
+        zone.sharedData.disableSpawns = false
     }
 
     update() 
