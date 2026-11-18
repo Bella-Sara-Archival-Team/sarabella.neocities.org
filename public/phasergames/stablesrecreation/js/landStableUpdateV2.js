@@ -16,7 +16,11 @@ class LandStable extends Phaser.Scene
         this.stablesManager.preloadDisplayLoadBar()
             
         // Load in images and sounds
-        game.load.image('stable_bg', './images/landStable/stable-bg.png');
+        if (horseName === "ronnie") {
+            game.load.image('stable_bg', './images/landStable/stable-bg-winter.png');
+        } else {
+            game.load.image('stable_bg', './images/landStable/stable-bg.png');
+        }
         game.load.image('stable_fg', './images/landStable/stable-fg.png');
         game.load.image('hunger_scale', './images/landStable/hunger.png');
         game.load.image('cleanliness_scale', './images/landStable/cleanliness.png');
@@ -166,7 +170,9 @@ class LandStable extends Phaser.Scene
 
 
         // Awards
-        game.awards = game.add.sprite(93, 165, 'awards', 'idle').setInteractive({ pixelPerfect: true });
+        if (horseName !== "ronnie") {
+            game.awards = game.add.sprite(93, 165, 'awards', 'idle').setInteractive({ pixelPerfect: true });
+        }
             // TODO: Enable this once the awards page has been added
             // game.awards.on('pointerover', function (pointer){ game.stablesManager.pointerover(game.awards, game.hover1) } )
             // game.awards.on('pointerout', function (pointer){ game.stablesManager.pointerout(game.awards) } )
