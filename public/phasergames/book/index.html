@@ -1,0 +1,99 @@
+<html>
+    <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-15G6TZ75VC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-15G6TZ75VC');
+</script>
+        <title data-il8n="game_bellapedia">Bellapedia</title>
+        <link rel="icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/styles.css">
+        <meta charset="UTF-8" />
+        <script src="//cdn.jsdelivr.net/npm/phaser@4.0.0/dist/phaser.js"></script>
+        <script src="https://unpkg.com/@esotericsoftware/spine-phaser@4.1.*/dist/iife/spine-phaser.js"></script>
+        <script src="./book.js"></script>
+        <script src="./bookLoad.js"></script>
+        <style type="text/css">
+            body {
+                margin: 0;
+            }
+        </style>
+    </head>
+
+    <script src="/save.js"></script>
+<script src="/language.js"></script>
+
+    <body style="text-align: center;"  onload="loadLanguagePref(); setupUserDropdown();"></body>
+        <script src="/header.js"></script>
+        <div id="gameDiv" style="padding-top: 10px; padding-bottom: 10px;">
+            <script type="text/javascript">
+
+                // Gets lang file
+                loadLanguagePref(false); 
+                lang = getCurrentLanguageCode()
+                function urlExists(url)
+                {
+                    var http = new XMLHttpRequest();
+                    http.open('HEAD', url, false);
+                    http.send();
+                    return http.status!=404;
+                }
+
+                book = "holiday"
+                if (!lang || !urlExists(`./lang/${book}/${lang}.json`)) {
+                    lang ='en'
+                }
+                // let langData
+                // const xmlHttp = new XMLHttpRequest();
+                // xmlHttp.onload = function() {
+                //     const myObj = JSON.parse(this.responseText);
+                //     langData = myObj
+                // }
+                // xmlHttp.open("GET", `./lang/${book}/${lang}.json`);
+                // xmlHttp.send();
+
+                // console.log(`./lang/${book}/${lang}.json`, langData)
+
+
+
+                let config = {
+                    parent: "gameDiv",
+                    type: Phaser.CANVAS,
+                    width: 886,
+                    height: 468,
+                    backgroundColor: '#110c27',
+                    physics: {
+                        default: 'arcade',
+                        arcade: {
+                            debug: false
+                        }
+                    },
+                    scene: [
+                        BookLoad,
+                        Book
+                    ]
+                };
+
+                const game = new Phaser.Game(config);
+        
+            </script>
+        </div>
+
+
+        <div id="footer" class="footer">
+          <script src="/footer.js"></script>
+          <script>
+            generateFooter({wikiLink: 'https://bellasara.wiki.gg/wiki/Category:Bellapedia', githubLink: 'https://github.com/x0xll/sarabella.neocities.org/tree/main/public/phasergames/bellapedia'});
+          </script>
+        </div>        
+        
+        <script src="/flags.js"></script>
+        <script src="/userManagerUpdatev2.js"></script>
+
+    </body>
+</html>
