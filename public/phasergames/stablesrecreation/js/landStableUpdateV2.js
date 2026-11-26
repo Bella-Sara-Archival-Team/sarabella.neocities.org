@@ -17,8 +17,6 @@ class LandStable extends Phaser.Scene
             const d = new Date();
             let month = d.getMonth();
             game.isWinterStable = month === 11
-
-            console.log(month, game.isWinterStable)
         }
 
         // LOADING BAR
@@ -304,17 +302,14 @@ class LandStable extends Phaser.Scene
                 game.book.setFrame('idle');
                 bookText.setAlpha(0)
             })
-            game.book.on('pointerdown', function (pointer) {
-                window.location.href = '/phasergames/book/index.html'
-            })
+            game.book.on('pointerdown', function (pointer) { window.location.href = '/phasergames/book/index.html' })
         } else {
-
             game.awards = game.add.sprite(93, 165, 'awards', 'idle').setInteractive({ pixelPerfect: true });
-        }
             // TODO: Enable this once the awards page has been added
             // game.awards.on('pointerover', function (pointer){ game.stablesManager.pointerover(game.awards, game.hover1) } )
             // game.awards.on('pointerout', function (pointer){ game.stablesManager.pointerout(game.awards) } )
             // game.awards.on('pointerdown', function (pointer){ window.location.href = game.awardsLink } )
+        }
 
 
         // Pitchfork
