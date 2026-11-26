@@ -12,15 +12,27 @@ class LandStable extends Phaser.Scene
         const game = this
         game.stablesManager = new StablesManager(game)
 
+        game.isWinterStable = false
+        if (horseName === "ronnie") {
+            const d = new Date();
+            let month = d.getMonth();
+            game.isWinterStable = month === 11
+
+            console.log(month, game.isWinterStable)
+        }
+
         // LOADING BAR
         this.stablesManager.preloadDisplayLoadBar()
             
         // Load in images and sounds
-        if (horseName === "ronnie") {
+        if (game.isWinterStable) {
             game.load.image('stable_bg', './images/landStable/stable-bg-winter.png');
+            game.load.atlas('book', './images/landStable/winter_book.png', './images/landStable/winter_book.json');
         } else {
             game.load.image('stable_bg', './images/landStable/stable-bg.png');
+            game.load.atlas('awards', './images/landStable/awards.png', './images/landStable/awards.json');
         }
+        
         game.load.image('stable_fg', './images/landStable/stable-fg.png');
         game.load.image('hunger_scale', './images/landStable/hunger.png');
         game.load.image('cleanliness_scale', './images/landStable/cleanliness.png');
@@ -32,7 +44,6 @@ class LandStable extends Phaser.Scene
         game.load.atlas('straw2', './images/landStable/straw2.png', './images/landStable/straw2.json');
         game.load.atlas('straw3', './images/landStable/straw3.png', './images/landStable/straw3.json');
         game.load.atlas('hay_loft', './images/landStable/hay_loft.png', './images/landStable/hay_loft.json');
-        game.load.atlas('awards', './images/landStable/awards.png', './images/landStable/awards.json');
 
         game.load.atlas('trough', './images/landStable/water.png', './images/landStable/water.json');
         game.load.atlas('trough_mask', './images/landStable/water_mask.png', './images/landStable/water_mask.json');
@@ -169,16 +180,6 @@ class LandStable extends Phaser.Scene
             });
 
 
-        // Awards
-        if (horseName !== "ronnie") {
-            game.awards = game.add.sprite(93, 165, 'awards', 'idle').setInteractive({ pixelPerfect: true });
-        }
-            // TODO: Enable this once the awards page has been added
-            // game.awards.on('pointerover', function (pointer){ game.stablesManager.pointerover(game.awards, game.hover1) } )
-            // game.awards.on('pointerout', function (pointer){ game.stablesManager.pointerout(game.awards) } )
-            // game.awards.on('pointerdown', function (pointer){ window.location.href = game.awardsLink } )
-
-
         // Water Trough
         game.trough = game.add.sprite(153, 455, 'trough', 'idle').setInteractive({ pixelPerfect: true });
             game.stablesManager.addSpriteAnims(game.trough, 'fill_water', [
@@ -288,6 +289,32 @@ class LandStable extends Phaser.Scene
         } else {
             game.stablesManager.createHorse(418, 295, 90)
         }
+
+
+        // Awards
+        if (game.isWinterStable) {
+            game.book = game.add.sprite(193, 160, 'book', 'idle').setInteractive({ pixelPerfect: true }).setDepth(1);
+            const bookText = game.add.text(225, 165, 'Twas the Night Before Christmas\nA Bella Sara Holiday Poem', game.stablesManager.hoverTextSettingsMain).setAlpha(0).setOrigin(0.5).setDepth(1);
+            game.book.on('pointerover', function (pointer) {
+                game.book.setFrame('hover');
+                game.hover1.play();
+                bookText.setAlpha(1)
+            })
+            game.book.on('pointerout', function (pointer) {
+                game.book.setFrame('idle');
+                bookText.setAlpha(0)
+            })
+            game.book.on('pointerdown', function (pointer) {
+                window.location.href = '/phasergames/book/index.html'
+            })
+        } else {
+
+            game.awards = game.add.sprite(93, 165, 'awards', 'idle').setInteractive({ pixelPerfect: true });
+        }
+            // TODO: Enable this once the awards page has been added
+            // game.awards.on('pointerover', function (pointer){ game.stablesManager.pointerover(game.awards, game.hover1) } )
+            // game.awards.on('pointerout', function (pointer){ game.stablesManager.pointerout(game.awards) } )
+            // game.awards.on('pointerdown', function (pointer){ window.location.href = game.awardsLink } )
 
 
         // Pitchfork

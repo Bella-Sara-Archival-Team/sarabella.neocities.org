@@ -42,7 +42,9 @@ class Book extends Phaser.Scene
         this.load.image('pageSelectBG', `./images/${this.langData.bg}.jpg`);
         
         this.load.image('pageRef', './images/ref3.jpg');
-        
+
+        this.load.atlas('music_button', '/phasergames/stablesrecreation/images/landStable/music.png', '/phasergames/stablesrecreation/images/landStable/music.json');
+        this.load.audio('audio', './audio/Bella Sara Christmas Poem.mp3');
     }
 
     create (data)
@@ -142,6 +144,29 @@ class Book extends Phaser.Scene
         UI.right.text = this.add.text(465, 115, 'Text goes here...', this.TEXT_BLACK_SETTINGS)//.setOrigin(0)
 
         UI.end = this.add.text(270, 105, 'Text goes here...', this.TEXT_BLACK_TITLE_SETTINGS).setOrigin(0.5,0)
+
+
+        // Add buttons
+        game.playAudio = false;
+        game.backgroundMusic = game.sound.add('audio');
+        game.muteButton = game.add.sprite(589+17, 438, 'music_button', game.playAudio ? 'music_on' : 'music_off').setInteractive({ pixelPerfect: true }).setScale(.8);
+        // ^ remove the +17 for actual position
+        game.muteButton.on('pointerdown', function (pointer)
+        {
+            if (game.playAudio) {
+                game.backgroundMusic.stop()
+                game.muteButton.setFrame('music_off_hover')
+            }
+            else {
+                game.backgroundMusic.play()
+                game.muteButton.setFrame('music_on_hover')
+            }
+            game.playAudio = !game.playAudio
+        });
+        game.muteButton.on('pointerover', function (pointer) { game.muteButton.setFrame(`music_${game.playAudio ? 'on' : 'off'}_hover`) });
+        game.muteButton.on('pointerout', function (pointer) { game.muteButton.setFrame(`music_${game.playAudio ? 'on' : 'off'}`) });
+        // There is meant to be a second button, we just don't know anything about it yet... Maybe one is play/pause and the other is mute/unmute
+        // game.otherButton = game.add.sprite(633, 438, 'music_button', game.playAudio ? 'music_on' : 'music_off').setInteractive({ pixelPerfect: true }).setScale(.8);
         
 
         // // ---------- Show Opened Book ---------- //
